@@ -203,7 +203,7 @@ static void read()
 static void print()
 {
 	if(token != '%'){
-		ERROR("Expected print statement\n");
+		ERROR("Expected print statement \n");
 		exit(EXIT_FAILURE);
 	}
 
@@ -231,7 +231,7 @@ static void stmt()
 		case '?':
 			read();
 			return;
-		case '&':
+		case '%':
 			print();
 			return;
 		default:
